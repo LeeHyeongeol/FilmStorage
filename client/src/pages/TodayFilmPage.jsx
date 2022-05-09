@@ -224,6 +224,7 @@ export default function TodayFilmPage() {
     } else if (info === "Rain") {
       setWeatherIcon(faUmbrella);
       setFilmResult(Rain);
+      setIsFilmComment("높은");
     } else if (info === "Snow") {
       setWeatherIcon(faSnowflake);
       setFilmResult(Snow);
@@ -350,7 +351,7 @@ const Container = styled.div`
   }
 
   h3 {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1160px) {
       margin-top: 25px;
       font-size: 16px;
     }
@@ -370,7 +371,7 @@ const Section = styled.section`
   margin-top: 3rem;
   margin-bottom: 10rem;
   flex-wrap: wrap;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1160px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -389,7 +390,7 @@ const SelectOptionWrap = styled.form`
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1160px) {
     display: flex;
     justify-content: center;
     width: 500px;
@@ -418,7 +419,7 @@ const FilmBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1160px) {
     width: 300px;
     margin-bottom: 3em;
   }
@@ -428,7 +429,7 @@ const FilmBox = styled.div`
   > h3.filmtitle {
     margin: 10px 0 0 0;
     /* border: 1px solid red; */
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1160px) {
       font-size: 19px;
       margin: 5px auto 12px;
     }
@@ -442,7 +443,7 @@ const FilmBox = styled.div`
     /* width: 10vw; */
     object-fit: cover;
     cursor: pointer;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1160px) {
       height: 220px;
     }
     @media screen and (max-width: 412px) {
@@ -459,7 +460,7 @@ const FilmBox = styled.div`
       .bold {
         font-weight: 600;
       }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1160px) {
         font-size: 13px;
       }
       @media screen and (max-width: 412px) {
@@ -480,7 +481,7 @@ const WeatherBox = styled.div`
   padding-top: 30px;
   font-size: 12rem;
   color: tomato;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1160px) {
     font-size: 9rem;
   }
   @media screen and (max-width: 412px) {
@@ -515,7 +516,7 @@ const ResultComment = styled.div`
   border: 1px solid Gainsboro;
   border-radius: 10px;
   box-shadow: 5px 5px 10px Gainsboro;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1160px) {
     position: sticky;
     width: 390px;
     font-size: 14px;
